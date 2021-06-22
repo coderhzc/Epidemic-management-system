@@ -1,4 +1,4 @@
-<template>
+<template>        <!--Login-View-->
   <div class="box-location">
     <div class="left-box-location">
         <div class="left-box-for" :class="{active:index===saveLeftActiveIndex,unactive:index!==saveLeftActiveIndex}"
@@ -69,7 +69,7 @@
 <script>
 import AdminLoginBox from "../../../components/content/loginSubassembly/loginShowBox/AdminLoginBox";
 import UserLoginBox from "../../../components/content/loginSubassembly/loginShowBox/UserLoginBox";
-import LoginBox from "../../../components/content/loginSubassembly/loginShowBox/LoginBox";
+import LoginBox from "../../../components/common/Swiper/LoginBox";
 import UserRegisterSwitch from "../../../components/content/loginSubassembly/registerSwich/UserRegisterSwitch";
 import AdminRegisterSwitch from "../../../components/content/loginSubassembly/registerSwich/AdminRegisterSwitch";
 export default {
@@ -202,7 +202,8 @@ export default {
 .box-location {
   position: relative;
   width: 100%;
-  height: 605px;
+  /*height: 605px;*/
+  height: 100vh;
   background-image: linear-gradient(to bottom, #00d8ff, #77ddff, #abe2ff, #d0e8ff, #eaf0ff, #eaf0ff, #eaf0ff, #eaf0ff, #d0e8ff, #abe1ff, #78dcff, #09d7ff);
   overflow: hidden;
 }
@@ -249,7 +250,6 @@ export default {
 /*login*/
 .box-style{
   position: absolute;
-  background-color: red;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
